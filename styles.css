@@ -1,7 +1,11 @@
-h1 {
-    color: green;
+.h1 {
+  color: blue;
+  font-family: Helvetica;
 }
+
 .special {
-    color: grey;
-    font-weight: bold;
+  color: grey;
+  font-weight: bold;
 }
+
+/*# sourceMappingURL=styles.css.map */
