@@ -21,8 +21,19 @@ body {
    
 .accept-button {
     @include fancy-button(green)
+    
 }
 
 .reject-button {
     @include fancy-button(red);
+}
+
+a.accept-button:hover { 
+    background-color: green;
+    color: white;
+}
+
+a.reject-button:hover { 
+    background-color: red;
+    color: white;
 }

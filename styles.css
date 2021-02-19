@@ -26,4 +26,14 @@ body {
   padding: 2px 5px;
 }
 
+a.accept-button:hover {
+  background-color: green;
+  color: white;
+}
+
+a.reject-button:hover {
+  background-color: red;
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
