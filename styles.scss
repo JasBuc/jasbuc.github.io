@@ -1,15 +1,28 @@
+
+$gutter-width: 40px;
+$small-gutter-width: 40px / 2;
+$font-stack: Helvetica, sans-serif;
+
+@function gutter-offset($width) {
+    @return $gutter-width + ($width / 2);
+}
+
 h1 {
+    align-content: center;
+    width: 100%;
     color: green;
-    font-family: Helvetica
+    font-family: $font-stack
 }
 
 .special {
+    left: gutter-offset(100px);
     color: grey;
     font-weight: bold;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
+    left: gutter-offset(100px);
+    font-family: $font-stack
 }
 
 @mixin fancy-button($color) {
@@ -29,11 +42,13 @@ body {
 }
 
 a.accept-button:hover { 
+    left: gutter-offset(100px);
     background-color: green;
     color: white;
 }
 
 a.reject-button:hover { 
+    left: gutter-offset(100px);
     background-color: red;
     color: white;
 }
