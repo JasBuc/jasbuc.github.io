@@ -1,11 +1,11 @@
-h1 {
-    color: green;
-    font-family: Helvetica
-}
+@import 'widget';
 
-.special {
-    color: grey;
-    font-weight: bold;
+$primary-color: #ff69b4;
+$font-stack: Helvetica, sans-serif;
+
+.gizmo {
+    background-color: $primary-color;
+    font: 24px $font-stack;
 }
 
 body {
@@ -17,12 +17,12 @@ body {
     border: 1px solid $color;
     border-radius: 3px;
     padding: 2px 5px;
-}
+  }
    
-.accept-button {
+  .accept-button {
     @include fancy-button(green)
-}
-
-.reject-button {
+  }
+   
+  .reject-button {
     @include fancy-button(red);
-}
+  }

@@ -8,4 +8,22 @@ h1 {
   font-weight: bold;
 }
 
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.accept-button {
+  color: green;
+  border: 1px solid green;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+.reject-button {
+  color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
 /*# sourceMappingURL=styles.css.map */

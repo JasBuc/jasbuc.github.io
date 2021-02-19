@@ -1,0 +1,55 @@
+.widget {
+  position: absolute;
+  left: 90px;
+  color: blue;
+}
+.widget div {
+  font-weight: bold;
+  border-color: blue;
+  margin: 0 10px;
+}
+.widget ul.listicle {
+  display: flex;
+}
+.widget ul.listicle li {
+  color: red;
+}
+
+.disabled-widget, .important-widget {
+  padding: 3em;
+  display: flex;
+}
+
+.important-widget {
+  font-weight: bold;
+}
+
+.disabled-widget {
+  color: gray;
+  cursor: not-allowed;
+}
+
+.gizmo {
+  background-color: #ff69b4;
+  font: 24px Helvetica, sans-serif;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.accept-button {
+  color: green;
+  border: 1px solid green;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+.reject-button {
+  color: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 2px 5px;
+}
+
+/*# sourceMappingURL=test.css.map */
