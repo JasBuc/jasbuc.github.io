@@ -43,4 +43,9 @@ a.reject-button:hover {
   color: white;
 }
 
+img {
+  width: 100%;
+  max-width: 600px;
+}
+
 /*# sourceMappingURL=styles.css.map */
