@@ -6,13 +6,14 @@ h1 {
 }
 
 .special {
-  left: 90px;
+  left: 15%;
   color: grey;
   font-weight: bold;
 }
 
 body {
-  left: 90px;
+  width: 100%;
+  left: 15%;
   font-family: Helvetica, sans-serif;
 }
 
@@ -31,13 +32,13 @@ body {
 }
 
 a.accept-button:hover {
-  left: 90px;
+  left: 15%;
   background-color: green;
   color: white;
 }
 
 a.reject-button:hover {
-  left: 90px;
+  left: 15%;
   background-color: red;
   color: white;
 }

@@ -1,10 +1,10 @@
 
-$gutter-width: 40px;
-$small-gutter-width: 40px / 2;
+$gutter-width: 10%;
+$small-gutter-width: 5%;
 $font-stack: Helvetica, sans-serif;
 
 @function gutter-offset($width) {
-    @return $gutter-width + ($width / 2);
+    @return $gutter-width + $small-gutter-width;
 }
 
 h1 {
@@ -21,6 +21,7 @@ h1 {
 }
 
 body {
+    width: 100%;
     left: gutter-offset(100px);
     font-family: $font-stack
 }
