@@ -1,8 +1,15 @@
 h1 {
   align-content: center;
   width: 100%;
+  font-size: 32pt;
   color: green;
   font-family: Helvetica, sans-serif;
+}
+
+.btn {
+  padding: 5px;
+  margin-left: 20px;
+  color: darkgreen;
 }
 
 .special {
@@ -17,18 +24,25 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+.link {
+  padding-left: 20px;
+  color: darkgreen;
+}
+
 .accept-button {
   color: green;
   border: 1px solid green;
   border-radius: 3px;
-  padding: 2px 5px;
+  padding: 4px 10px;
+  margin-left: 20px;
 }
 
 .reject-button {
   color: red;
   border: 1px solid red;
   border-radius: 3px;
-  padding: 2px 5px;
+  padding: 4px 10px;
+  margin-left: 20px;
 }
 
 a.accept-button:hover {
@@ -44,8 +58,19 @@ a.reject-button:hover {
 }
 
 img {
+  padding-left: 20px;
   width: 100%;
-  max-width: 600px;
+  max-width: 900px;
+}
+
+@media (min-width: 1008px) {
+  h1 {
+    font-size: 26pt;
+  }
+
+  img {
+    max-width: 500px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
