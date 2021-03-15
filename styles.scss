@@ -16,9 +16,9 @@ h1 {
 }
 
 .btn {
-    padding: 5px;
-    margin-left: 20px;
+    padding: 10px;
     color: darkgreen;
+    font-size: 20px;
 }
 
 .special {
@@ -28,13 +28,13 @@ h1 {
 }
 
 body {
+    margin-left: 20px;
     width: 100%;
     left: gutter-offset(100px);
     font-family: $font-stack
 }
 
 .link {
-    padding-left: 20px;
     color: darkgreen;
 }
 
@@ -43,7 +43,7 @@ body {
     border: 1px solid $color;
     border-radius: 3px;
     padding: 4px 10px;
-    margin-left: 20px;
+    margin-right: 10px;
 }
    
 .accept-button {
@@ -54,16 +54,19 @@ body {
     @include fancy-button(red);
 }
 
-a.accept-button:hover { 
+@mixin hover-button($color) {
     left: gutter-offset(100px);
-    background-color: green;
+    background-color: $color;
     color: white;
+    border-radius: 5px;
+}
+
+a.accept-button:hover { 
+    @include hover-button(green)
 }
 
 a.reject-button:hover { 
-    left: gutter-offset(100px);
-    background-color: red;
-    color: white;
+    @include hover-button(red)
 }
 
 img {
@@ -73,6 +76,7 @@ img {
 }
 
 $desktop: "(min-width: 1008px)";
+$phone: "(max-width: 1007px)";
  
 @media #{$desktop} {
     h1 {
@@ -80,5 +84,23 @@ $desktop: "(min-width: 1008px)";
     }
     img {
         max-width: 500px;
+    }
+}
+
+@media #{$phone} {
+    body {
+        font-size: 30px;
+    }
+    .btn {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    .accept-button {
+        @include hover-button(green)
+    }
+    .reject-button {
+        @include hover-button(red)
     }
 }

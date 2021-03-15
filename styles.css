@@ -7,9 +7,9 @@ h1 {
 }
 
 .btn {
-  padding: 5px;
-  margin-left: 20px;
+  padding: 10px;
   color: darkgreen;
+  font-size: 20px;
 }
 
 .special {
@@ -19,13 +19,13 @@ h1 {
 }
 
 body {
+  margin-left: 20px;
   width: 100%;
   left: 15%;
   font-family: Helvetica, sans-serif;
 }
 
 .link {
-  padding-left: 20px;
   color: darkgreen;
 }
 
@@ -34,7 +34,7 @@ body {
   border: 1px solid green;
   border-radius: 3px;
   padding: 4px 10px;
-  margin-left: 20px;
+  margin-right: 10px;
 }
 
 .reject-button {
@@ -42,19 +42,21 @@ body {
   border: 1px solid red;
   border-radius: 3px;
   padding: 4px 10px;
-  margin-left: 20px;
+  margin-right: 10px;
 }
 
 a.accept-button:hover {
   left: 15%;
   background-color: green;
   color: white;
+  border-radius: 5px;
 }
 
 a.reject-button:hover {
   left: 15%;
   background-color: red;
   color: white;
+  border-radius: 5px;
 }
 
 img {
@@ -70,6 +72,33 @@ img {
 
   img {
     max-width: 500px;
+  }
+}
+@media (max-width: 1007px) {
+  body {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  .accept-button {
+    left: 15%;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .reject-button {
+    left: 15%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
   }
 }
 
